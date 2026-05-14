@@ -1,0 +1,32 @@
+{
+  "name": "novopayment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:list": "playwright test --list",
+    "test:api": "playwright test --grep \"\\[API\\]\"",
+    "test:nc": "playwright test --grep \"\\[NC\\]\"",
+    "test:create": "playwright test --grep \"\\[API\\]\\[CREATE\\]\"",
+    "test:update": "playwright test --grep \"\\[API\\]\\[UPDATE\\]\"",
+    "test:delete": "playwright test --grep \"\\[API\\]\\[DELETE\\]\"",
+    "test:get": "playwright test --grep \"\\[API\\]\\[GET\\]\"",
+    "test:multi-tenant": "playwright test --grep \"\\[API\\]\\[MULTI-TENANT\\]\"",
+    "test:e2e": "playwright test --grep \"\\[API\\]\\[E2E\\]\"",
+    "test:perf": "playwright test --grep \"\\[PERF\\]\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.7.0"
+  }
+}
